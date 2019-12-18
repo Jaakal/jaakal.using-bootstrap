@@ -7,6 +7,25 @@ $( window ).resize(function() {
 });
 
 $(window).scroll(function(){
+   var windowWidth = window.innerWidth;
+   var windowHeight = window.innerHeight;
+
+   // console.log('viewport width is: '+ windowWidth + ' and viewport height is:' + windowHeight);
+   // console.log($(".col2").outerHeight());
+   // console.log($(".header-top").outerHeight());
+   // console.log($(".col2").position().left + " -- " + $(".col2").position().top);
+
+   // if ($(document).scrollTop() >= $(".col2").outerHeight() - window.innerHeight + $(".header-top").outerHeight()) {
+   //    let topPos = $(".col2").outerHeight() - window.innerHeight + $(".header-top").outerHeight();
+      
+   //    $(".col2-sticky").css({
+   //       "position": "fixed",
+   //       "left": $(".col2").position().left,
+   //       "top": -topPos,
+   //       "width": $('.col2').outerWidth()
+   //    });
+   // }
+   
    if ($(document).scrollTop() >= 95) {
       $("header").addClass("header-fixed");
    } else if ($(window).outerWidth() > 991) {

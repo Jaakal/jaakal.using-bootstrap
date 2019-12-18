@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
 }
 
-h3 {
+h3, h5 {
     position: relative;
     margin-bottom: 10px;
     font-family: "Roboto Condensed",sans-serif;
@@ -481,9 +481,7 @@ header {
 /* main article content container set up */
 
 main .container {
-    /* height: 3000px; */
     padding: 20px 15px 0 15px;
-    padding-top: 20px;
     background-color: #ffffff;
 }
 
@@ -511,9 +509,17 @@ main .col1 {
 }
 
 main .col2 {
+    position: relative;
     width: 100%;
-    padding: 0 15px;
     height: 2842px;
+    padding: 0 15px;
+}
+
+main .col2-sticky {
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: auto;
 }
 
 .block-title {
@@ -671,6 +677,18 @@ article h3 a:hover {
     background-color: #f4f5f7;
 }
 
+.culture-stories .block-title {
+    padding: 10px;
+}
+
+.culture-items {
+    margin: 0 -10px;
+}
+
+.culture-item {
+    padding: 0 10px;
+}
+
 .culture-item .image-link {
     display: block;
     width: 100%;
@@ -680,6 +698,158 @@ article h3 a:hover {
 
 .culture-item-1 .image-link {
     background-image: url(https://d.newsweek.com/en/full/1554108/travel-influencer-petra.jpg?w=397&h=265&f=c3e89e1ee086557bd3cfdfe148bf3ba1);
+}
+
+.culture-item-2 .image-link {
+    background-image: url(https://d.newsweek.com/en/full/1552293/cul-map-underwater-banner.jpg?w=397&h=265&f=556690dba11324f197a04f43aadde8fa);
+}
+
+.culture-item-3 .image-link {
+    background-image: url(https://d.newsweek.com/en/full/1553769/hero-pic-italian-hill-towns.jpg?w=397&h=265&f=ecb5ef8afc670365419655849318d2d4);
+}
+
+.culture-item-4 .image-link {
+    background-image: url(https://d.newsweek.com/en/full/1552761/yasur-vanuatu.jpg?w=397&h=265&f=6261b1c5b032a708910f3916198ab0a9);
+}
+
+.culture-item .info {
+    padding: 15px 10px 20px;
+}
+
+.culture-item .title {
+    margin-bottom: 10px;
+    font-family: "Lora",serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #272727;
+}
+
+.culture-item .title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.culture-item .title a:hover {
+    text-decoration: none;
+}
+
+.culture-item .summary {
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(39, 39, 39, .5);
+}
+
+.culture-item .tags {
+    font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #272727;
+}
+
+.culture-item .tags a {
+    display: inline-block;
+    padding: 0 6px;
+    margin: 0 6px 6px 0;
+    text-decoration: none;
+    background-color: #c2d4d7;
+    color: inherit;
+}
+
+.culture-item .tags a:hover {
+    text-decoration: none;
+    background-color: #272727;
+    color: #c2d4d7;
+}
+
+/* more stories */
+
+.more-stories {
+    order: 3;
+}
+
+.more-stories article {
+    padding: 14px 0;
+    border-top: 1px solid #ddd;
+}
+
+.more-stories article:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.more-stories article .image-link {
+    float: left;
+    width: 135px;
+    margin-right: 15px;
+}
+
+.more-stories article .image-link a {
+    display: block;
+    padding-bottom: 66.6667%;
+    background-size: contain;
+}
+
+.more-stories article h4 {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: black;
+}
+
+.more-stories article h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.more-stories article h4 a:hover {
+    text-decoration: underline #f72210;
+}
+
+.more-stories article .image-link-1 {
+    background-image: url(https://d.newsweek.com/en/full/1554013/mikie-sherrill-backs-impeachment.jpg?w=135&h=90&f=a93ed6863957ed6b59c37bbc3c60b23e);
+}
+
+.more-stories article .image-link-2 {
+    background-image: url(https://d.newsweek.com/en/full/1553921/joe-biden-trump-impeachment-2020-election.jpg?w=135&h=90&f=b2a13dec1b71cc054c1493cc73abbd0b);
+}
+
+.more-stories article .image-link-3 {
+    background-image: url(https://d.newsweek.com/en/full/1554129/rifles.jpg?w=135&h=90&f=b1d71f94110f850f1f6ac15200bd0d29);
+}
+
+.more-stories article .image-link-4 {
+    background-image: url(https://d.newsweek.com/en/full/1553905/mikhail-gorbachev-us-inf-treaty-nuclear-weapons.jpg?w=135&h=90&f=5ecc03d2610684ab0ac339ebb3e29479);
+}
+
+.more-stories article .image-link-5 {
+    background-image: url(https://d.newsweek.com/en/full/1554127/democratic-holdouts-impeachment-continue-dwindle.jpg?w=135&h=90&f=1b15b6a4dbaafb77cd5c063a27fe7de5);
+}
+
+.more-stories article .image-link-6 {
+    background-image: url(https://d.newsweek.com/en/full/1554019/google.jpg?w=135&h=90&f=ad67f305952a4b96fdd1c44fd50335db);
+}
+
+.more-stories article .image-link-7 {
+    background-image: url(https://d.newsweek.com/en/full/1553880/mitch-mcconnell-lindsey-graham-trump-impeachment-trial.jpg?w=135&h=90&f=17e7317f7c8029ac7cb8404c0c4dc505);
+}
+
+.more-stories article .image-link-8 {
+    background-image: url(https://d.newsweek.com/en/full/1554093/syria-military-strike-idlib-offensive.jpg?w=135&h=90&f=50bec09adbe000baf2b68e8bb639cc79);
+}
+
+.more-stories article .image-link-9 {
+    background-image: url(https://d.newsweek.com/en/full/1553873/airport-travel-suitcase-stock-getty.jpg?w=135&h=90&f=ed58b4dbd8c2499c0b586048b453d0e4);
+}
+
+.more-stories article .image-link-10 {
+    background-image: url(https://d.newsweek.com/en/full/1554090/family-separation.jpg?w=135&h=90&f=e332b46c99a9d48d2ed03922fc31f5b8);
 }
 
 /* opinion */
@@ -899,6 +1069,146 @@ article h3 a:hover {
     text-decoration: none;
 }
 
+/* in the magazine */
+
+.in-the-magazine .container {
+    padding: 0 30px;
+    background-color:  #ffffff;
+}
+
+.in-the-magazine .row-top {
+    display: flex;
+    align-items: flex-end;
+}
+
+.in-the-magazine .magazine {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.in-the-magazine .magazine .image-link {
+    display: block;
+    position: relative;
+    padding-bottom: 133.45%;
+    background-image: url(https://d.newsweek.com/en/full/1552351/december-20-2019.jpg?w=360&h=480&q=90&f=9569746647a299adef92dd6efcd7ae9e);
+    background-size: contain;
+}
+
+.in-the-magazine .magazine .category {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 33px;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,.9);
+    color: #f72210;
+}
+
+.in-the-magazine .magazine .see-all-features {
+    display: block;
+    background-color: #f4f5f6;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+
+    padding: 10px 10px 10px 12px;
+    font: bold 18px/18px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+}
+
+.in-the-magazine .magazine-articles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.in-the-magazine .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 15px 15px 15px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.in-the-magazine article {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.in-the-magazine .title-icon {
+    display: block;
+    width: 29px;
+    height: 28px;
+    margin-right: 10px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.in-the-magazine .image-link a {
+    display: block;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.in-the-magazine .image-link-1 a {
+    background-image: url(https://d.newsweek.com/en/full/1550220/health-care-telemedicine-digital-medicine-tech.jpg?w=466&h=311&q=90&f=942d1590e033f78a23e537e59fa9fbd0);
+}
+
+.in-the-magazine .image-link-2 a {
+    background-image: url(https://d.newsweek.com/en/full/1552796/fe-dramazon-sb-drgoogle-banner.jpg?w=466&h=311&l=56&t=45&q=90&f=41c24c9e96e46d3fd12b75b23d08710c);
+}
+
+.in-the-magazine .image-link-3 a {
+    background-image: url(https://d.newsweek.com/en/full/1552304/fe-jimmywales-01-450700954-banner.jpg?w=466&h=311&l=54&t=47&q=90&f=2d292f2489a2a529a519ae0f06754fda);
+}
+
+
+.in-the-magazine .magazine-articles-wrapper .category {
+    margin: 10px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #f72210;
+}
+
+
+.in-the-magazine .magazine-category {
+    display: inline-block;
+    padding: 0 7px;
+    margin-right: 7px;
+    background-color: #f72210;
+    color: white;
+}
+
+.in-the-magazine .overall-category a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.in-the-magazine h5 {
+    margin-bottom: 30px;
+}
+
+.in-the-magazine h5 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.in-the-magazine h5 a:hover {
+    text-decoration: underline #f72210;
+}
 
 @media screen and (max-width: 991px) {
     .header-fixed + main .container {
@@ -944,10 +1254,36 @@ article h3 a:hover {
 
     .culture-items {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .culture-item {
         width: 50%;
+    }
+
+    .more-stories article .image-link {
+        margin-bottom: 10px;
+    }
+
+    .in-the-magazine .row-top .magazine {
+        width: 25%;
+    }
+    
+    .in-the-magazine .row-top .magazine-articles-wrapper {
+        width: 75%;
+    }
+
+    .in-the-magazine .section-title {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 8px;
+    }
+
+    .in-the-magazine article {
+        width: 33.3333%;
+    }
+
+    .in-the-magazine h5 {
+        margin-bottom: 0;
     }
 }
 
