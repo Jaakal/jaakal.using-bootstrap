@@ -10,6 +10,7 @@ body {
   background-color: #f4f5f6;
   color: #333;
   overflow-x: hidden;
+  visibility: hidden;
 }
 
 .container {
@@ -48,6 +49,12 @@ h5 {
   position: absolute;
   clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+article,
+.culture-stories,
+li {
+  visibility: hidden;
 }
 
 /* thick-navbar */
@@ -815,37 +822,37 @@ footer .newsweek-link {
 .opinion li:nth-of-type(1) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/1554120/marcia-l-fudge.png?w=63&h=63&f=7d6d42cee013c2d0702a19c6038abcb0)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .opinion li:nth-of-type(2) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/89510/marc-schulman.png?w=63&h=63&f=0544ec46ee21c238aad07cc8eaa35569)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .opinion li:nth-of-type(3) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/100577/daniel-r-depetris.png?w=63&h=63&f=557e36e1b094f95cf0416216ba9ecaa7)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .opinion li:nth-of-type(4) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .opinion li:nth-of-type(5) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/1553083/zoe-lofgren.png?w=63&h=63&f=d2bcfda2afff26c8a7d4d5e87a176917)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .opinion li:nth-of-type(6) .head-shot a {
   background:
     url(https://d.newsweek.com/en/full/1528785/roff-new.png?w=63&h=63&f=4dc2ef8dad149bbca161552d8b875591)
-      center no-repeat #f72210;
+    center no-repeat #f72210;
 }
 
 .header-fixed #nav-menu a {

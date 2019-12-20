@@ -133,6 +133,11 @@ $(document).ready(function() {
 
    // Scroll reveal calls
    
+   ScrollReveal().reveal('body', {
+     duration: 0,
+     delay: 100
+   });
+
    ScrollReveal().reveal('article', {
      duration: 600,
      scale: 0.3,
@@ -140,10 +145,17 @@ $(document).ready(function() {
      delay: 200
    });
 
+   ScrollReveal().reveal('.culture-stories', {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px',
+      delay: 200
+   });
+
    ScrollReveal().reveal('li', {
       duration: 600,
       scale: 0.3,
       distance: '0px',
       delay: 200
-    });
+   });
 });
