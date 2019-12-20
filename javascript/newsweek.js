@@ -130,4 +130,20 @@ $(document).ready(function() {
       $(".nav-wrapper").toggleClass("display-navmenu");
       $(".header-bottom").toggleClass("start-navmenu-animation");
    });
+
+   // Scroll reveal calls
+   
+   ScrollReveal().reveal('article', {
+     duration: 600,
+     scale: 0.3,
+     distance: '0px',
+     delay: 200
+   });
+
+   ScrollReveal().reveal('li', {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px',
+      delay: 200
+    });
 });
