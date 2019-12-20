@@ -2,6 +2,8 @@
 
 This is a clone of the webpage https://www.newsweek.com/ I added some extra animations to the navbar different parts and used ScrollReveal to animate in different parts of the webpage. 
 
+![Link to the live version](https://jaakal.github.io/jaakal.using-bootstrap/)
+
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/using-bootstrap/blob/layout/screenshot.png)
